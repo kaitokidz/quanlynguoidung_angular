@@ -3,12 +3,12 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HeaderComponent } from './header/header.component';
+import { DanhsachNhanvienComponent } from './danhsach-nhanvien/danhsach-nhanvien.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HeaderComponent
+    DanhsachNhanvienComponent,
   ],
   imports: [
     BrowserModule,
