@@ -9,6 +9,8 @@ import { OnewayBindingComponent } from './data-binding/oneway-binding/oneway-bin
 import { QuanlyNguoidungComponent } from './quanly-nguoidung/quanly-nguoidung.component';
 import { TwowayBindingComponent } from './data-binding/twoway-binding/twoway-binding.component';
 import { BaiTapDataBindingComponent } from './bai-tap-data-binding/bai-tap-data-binding.component';
+import {StructuralDirectiveModule} from './structural-directive/structural-directive.module';
+
 
 @NgModule({
   declarations: [
@@ -17,7 +19,7 @@ import { BaiTapDataBindingComponent } from './bai-tap-data-binding/bai-tap-data-
     OnewayBindingComponent,
     QuanlyNguoidungComponent,
     TwowayBindingComponent,
-    BaiTapDataBindingComponent,
+    BaiTapDataBindingComponent
   ],
   exports: [
     DataBindingComponent,
@@ -25,7 +27,8 @@ import { BaiTapDataBindingComponent } from './bai-tap-data-binding/bai-tap-data-
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    StructuralDirectiveModule
   ],
   providers: [],
   bootstrap: [AppComponent]
