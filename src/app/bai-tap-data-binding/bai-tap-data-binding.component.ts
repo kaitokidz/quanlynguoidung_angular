@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BaiTapDataBindingComponent implements OnInit {
 
-  public email:string    = "minchieng@mgail.com";
+  public email:string    = "minhchieng@gmail.com";
   public fullName:string = "Minh Chieng";
 
   constructor() { }
