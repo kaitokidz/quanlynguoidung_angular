@@ -6,7 +6,13 @@
 <button class="btn btn-primary" (click)="show()" >Show</button>
 
 <hr>
-<div>
-  <button class="btn btn-warning">Logout</button>
+<div *ngIf="statusLogin; else displayLogin">
+  <button class="btn btn-warning" (click)="logout()">Logout</button>
   <h1>Hello Mr. Minh !!!</h1>
 </div>
+
+
+<ng-template #displayLogin>
+  <button class="btn btn-success" (click)="login()">Login</button>
+  <h1>Login please!!!</h1>
+</ng-template>

@@ -10,6 +10,8 @@ export class NgifComponent implements OnInit {
   // True -> show, false -> hidden
   status:boolean = true;
 
+  statusLogin:boolean = true;
+
 
   constructor() { }
 
@@ -22,6 +24,14 @@ export class NgifComponent implements OnInit {
 
   show() {
     this.status = true;
+  }
+
+  logout() {
+    this.statusLogin = false;
+  }
+
+  login() {
+    this.statusLogin = true;
   }
 
 }
