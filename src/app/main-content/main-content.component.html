@@ -1,0 +1,70 @@
+  <!-- Phan tab menu -->
+  <ul class="nav nav-tabs" role="tablist">
+    <li class="nav-item">
+      <a class="nav-link active" href="#DanhSachNguoiDung" role="tab" data-toggle="tab">Danh sách người dùng</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#DanhSachKhoaHoc" role="tab" data-toggle="tab">Danh sách khóa học</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#ThongKe" role="tab" data-toggle="tab">Thống kê</a>
+    </li>
+  </ul>
+  <br />
+  <!-- Tab panes -->
+  <div class="tab-content">
+    <!--Danh sách người dùng -->
+    <div role="tabpanel" class="tab-pane  in active" id="DanhSachNguoiDung">
+      <div class="row">
+        <div class="col-md-8">
+          <!-- BEGIN BUTTOM THÊM MỚI -->
+          <button id="btnThemNguoiDung" class="btn btn-success" data-toggle="modal" data-target="#myModal">
+            <i class="fa fa-plus mr-1"></i>
+            Thêm Mới
+          </button>
+          <!-- END BUTTON THÊM MỚI -->
+        </div>
+        <div class="col-md-4">
+          <!-- BEGIN TÌM KIẾM -->
+          <div class="input-group mb-3">
+            <input type="text" class="form-control" placeholder="Nhập từ khóa" aria-label="Recipient's username"
+              aria-describedby="basic-addon2">
+            <div class="input-group-append">
+              <span class="input-group-text" id="basic-addon2"><i class="fa fa-search"></i></span>
+            </div>
+          </div>
+          <!-- END TÌM KIẾM -->
+        </div>
+      </div>
+      <div class="clear-fix"></div>
+      <div class="tblNguoiDung" id="tblNguoiDung">
+        <!-- BEGIN TABLE NGƯỜI DÙNG -->
+        <table class="table table-bordered">
+          <thead>
+            <th>STT</th>
+            <th>Tài khoản</th>
+            <th>Mật khẩu</th>
+            <th>Họ tên</th>
+            <th>Email</th>
+            <th>Số điện thoại</th>
+          </thead>
+          <tbody id="tblDanhSachNguoiDung">
+
+          </tbody>
+        </table>
+        <!-- END TABLE NGƯỜI DÙNG -->
+      </div>
+      <br />
+    </div>
+    <!-- Kết thúc danh sách người dùng -->
+    <!-- Danh sách khóa học -->
+    <div role="tabpanel" class="tab-pane fade" id="DanhSachKhoaHoc">
+      <span>Đang cập nhật...</span>
+    </div>
+    <!-- Kết thúc danh sách khóa học -->
+    <!-- Thống kê -->
+    <div role="tabpanel" class="tab-pane fade" id="ThongKe">
+      <span>Đang cập nhật...</span>
+    </div>
+    <!-- Kết thúc thống kê -->
+  </div>
