@@ -3,18 +3,19 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HeaderComponent } from './header/header.component';
-import { NavbarComponent } from './navbar/navbar.component';
-import { MainContentComponent } from './main-content/main-content.component';
-import { ModalComponent } from './modal/modal.component';
+import { DataBindingComponent } from './oneway/data-binding/data-binding.component';
+import { OnewayBindingComponent } from './oneway/data-binding/oneway-binding/oneway-binding.component';
+import { OnewayComponent } from './oneway/oneway.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HeaderComponent,
-    NavbarComponent,
-    MainContentComponent,
-    ModalComponent,
+    DataBindingComponent,
+    OnewayBindingComponent,
+    OnewayComponent,
+  ],
+  exports: [
+    DataBindingComponent,
   ],
   imports: [
     BrowserModule,
