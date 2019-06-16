@@ -32,17 +32,14 @@
         </tr>
       </thead>
       <tbody>
-        <tr *ngFor = 'let item of lstProduct; let i = index' [ngClass] = "{bgColor: i % 2 !== 0}">
-          <td>{{i+1}} </td>
-          <td>{{item.productNo}} </td>
-          <td>{{item.productName}} </td>
-          <td>{{item.productPrice}} </td>
-        </tr>
-        <tr>
-          <td scope="row"></td>
-          <td></td>
-          <td></td>
-        </tr>
+        <ng-container *ngIf= "lstProduct != null">
+          <tr *ngFor = 'let item of lstProduct; let i = index' [ngClass] = "{bgColor: i % 2 !== 0}">
+            <td>{{i+1}} </td>
+            <td>{{item.productNo}} </td>
+            <td>{{item.productName}} </td>
+            <td>{{item.productPrice}} </td>
+          </tr>        
+        </ng-container><!--  End ngIf -->
       </tbody>
     </table>
   </div>
