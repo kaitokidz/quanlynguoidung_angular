@@ -1,0 +1,49 @@
+<div class="container">
+  <div class="row col-md-5">
+    <div class="form-group">
+      <label for="">Mã Sản Phẩm</label>
+      <input type="text" class="form-control" #maSP>
+    </div>
+    
+
+    <div class="form-group">
+      <label for="">Tên Sản Phẩm</label>
+      <input type="text" class="form-control" #tenSP>
+    </div>
+
+
+    <div class="form-group">
+      <label for="">Giá Sản Phẩm</label>
+      <input type="text" class="form-control" #gia>
+    </div>
+
+    <button class="btn btn-success" (click)= 'addProduct(maSP.value, tenSP.value, gia.value)'>Thêm Sản Phẩm</button>
+  </div>
+
+  <div class="row mt-3">
+    <table class="table">
+      <thead>
+        <tr [ngClass] = "{theadStyle:true}">
+          <!-- <tr> -->
+          <th>STT</th>
+          <th>Mã SP</th>
+          <th>Tên SP</th>
+          <th>Gía</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor = 'let item of lstProduct; let i = index' [ngClass] = "{bgColor: i % 2 === 0}">
+          <td>{{i+1}} </td>
+          <td>{{item.productNo}} </td>
+          <td>{{item.productName}} </td>
+          <td>{{item.productPrice}} </td>
+        </tr>
+        <tr>
+          <td scope="row"></td>
+          <td></td>
+          <td></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

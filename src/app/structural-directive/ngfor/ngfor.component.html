@@ -1,0 +1,6 @@
+<h1 style="color: red">ngFor</h1>
+
+
+<ul *ngFor='let user of lstUsers; let stt = index'>
+    <li>STT: {{stt+1}}- Name: {{user.name}} - Age: {{user.age}}</li>
+</ul>

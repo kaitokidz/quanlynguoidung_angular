@@ -10,6 +10,7 @@ import { QuanlyNguoidungComponent } from './quanly-nguoidung/quanly-nguoidung.co
 import { TwowayBindingComponent } from './data-binding/twoway-binding/twoway-binding.component';
 import { BaiTapDataBindingComponent } from './bai-tap-data-binding/bai-tap-data-binding.component';
 import {StructuralDirectiveModule} from './structural-directive/structural-directive.module';
+import { AttributeDirectiveModule } from './attribute-directive/attribute-directive.module';
 
 
 @NgModule({
@@ -28,7 +29,8 @@ import {StructuralDirectiveModule} from './structural-directive/structural-direc
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    StructuralDirectiveModule
+    StructuralDirectiveModule,
+    AttributeDirectiveModule
   ],
   providers: [],
   bootstrap: [AppComponent]
