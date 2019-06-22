@@ -2,7 +2,7 @@
   <div class="row">
     <ng-container *ngFor = "let phim of danhSachPhim">
       <div class="col-md-3">
-          <app-item-phim [film] = "phim" ></app-item-phim>
+          <app-item-phim [film] = "phim" (eventLike) = "dsPhimLike($event)"></app-item-phim>
       </div>
     </ng-container>
   </div>

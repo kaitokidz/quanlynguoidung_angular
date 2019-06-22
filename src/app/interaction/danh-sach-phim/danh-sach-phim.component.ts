@@ -28,4 +28,13 @@ export class DanhSachPhimComponent implements OnInit {
   ngOnInit() {
   }
 
+  public dsPhimLike(_phim: any) {
+    
+    let film = this.danhSachLike.find(function (film){
+      return _phim.maPhim === film.maPhim
+    }); 
+    
+    film.soLike++;    
+  }
+
 }
