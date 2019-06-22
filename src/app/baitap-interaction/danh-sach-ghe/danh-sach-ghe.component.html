@@ -1,0 +1,13 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-6">
+      <ng-container *ngFor = "let item of mangGhe">
+          <app-ghe [Ghe] ] = 'item'></app-ghe>
+          <br *ngIf = "index + 1 % $ == 0">
+      </ng-container>
+    </div>
+  </div>
+</div>
+
+
+Ghe

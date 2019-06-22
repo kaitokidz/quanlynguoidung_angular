@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChildren } from '@angular/core';
+import  {ItemPhimComponent} from './item-phim/item-phim.component';
 
 @Component({
   selector: 'app-danh-sach-phim',
@@ -7,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DanhSachPhimComponent implements OnInit {
 
-  
+  @ViewChildren(ItemPhimComponent)  tagListItemPhim : QueryList<ItemPhimComponent>;
 
   public danhSachPhim = [
     {maPhim: 1, tenPhim: "Minions", gia: "85000", hinhAnh:"./assets/images/minions.jpg"},
@@ -40,5 +41,14 @@ export class DanhSachPhimComponent implements OnInit {
 
   public themPhim(_phim : any) {
     this.danhSachPhim.push(_phim);
+  }
+
+
+  public viewchildren() {
+    this.tagListItemPhim.map(item => {
+      if(item.film.maPhim == 2) {
+        item.film.gia = 1000000
+      }      
+    });
   }
 }

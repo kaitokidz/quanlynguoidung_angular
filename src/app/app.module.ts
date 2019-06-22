@@ -13,6 +13,7 @@ import {StructuralDirectiveModule} from './structural-directive/structural-direc
 import { AttributeDirectiveModule } from './attribute-directive/attribute-directive.module';
 import { NgContentModule } from './ng-content/ng-content.module';
 import { InteractionModule } from './interaction/interaction.module';
+import { BaitapInteractionModule } from './baitap-interaction/baitap-interaction.module';
 
 
 @NgModule({
@@ -34,7 +35,8 @@ import { InteractionModule } from './interaction/interaction.module';
     StructuralDirectiveModule,
     AttributeDirectiveModule,
     NgContentModule,
-    InteractionModule
+    InteractionModule,
+    BaitapInteractionModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -7,7 +7,7 @@ import { ItemPhimComponent } from './danh-sach-phim/item-phim/item-phim.componen
 @NgModule({
   declarations: [InteractionComponent, DanhSachPhimComponent, ItemPhimComponent],
   imports: [
-    CommonModule
+    CommonModule, BaitapInteractionModule
   ],
   exports: [InteractionComponent],
 })
