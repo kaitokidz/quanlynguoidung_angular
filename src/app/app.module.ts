@@ -11,6 +11,8 @@ import { TwowayBindingComponent } from './data-binding/twoway-binding/twoway-bin
 import { BaiTapDataBindingComponent } from './bai-tap-data-binding/bai-tap-data-binding.component';
 import {StructuralDirectiveModule} from './structural-directive/structural-directive.module';
 import { AttributeDirectiveModule } from './attribute-directive/attribute-directive.module';
+import { NgContentModule } from './ng-content/ng-content.module';
+import { InteractionModule } from './interaction/interaction.module';
 
 
 @NgModule({
@@ -20,7 +22,7 @@ import { AttributeDirectiveModule } from './attribute-directive/attribute-direct
     OnewayBindingComponent,
     QuanlyNguoidungComponent,
     TwowayBindingComponent,
-    BaiTapDataBindingComponent
+    BaiTapDataBindingComponent,
   ],
   exports: [
     DataBindingComponent,
@@ -30,7 +32,9 @@ import { AttributeDirectiveModule } from './attribute-directive/attribute-direct
     AppRoutingModule,
     FormsModule,
     StructuralDirectiveModule,
-    AttributeDirectiveModule
+    AttributeDirectiveModule,
+    NgContentModule,
+    InteractionModule
   ],
   providers: [],
   bootstrap: [AppComponent]
