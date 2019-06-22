@@ -37,4 +37,8 @@ export class DanhSachPhimComponent implements OnInit {
     film.soLike++;    
   }
 
+
+  public themPhim(_phim : any) {
+    this.danhSachPhim.push(_phim);
+  }
 }
